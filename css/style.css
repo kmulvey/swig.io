@@ -1,19 +1,32 @@
-html, body{
-	height: 100%;
-}
 body{
 	font-family: 'Open Sans', sans-serif;
 	color: #333;
 }
+.center{
+	margin: 0 auto;
+	width: 80%;
+}
 #home{
 	background: #EEE;
-	height: 75%;
 }
-h1{
+#logo{
+	font-weight: 800;
+	font-size: 36px;
+	font-style: italic;
+}
+#logo span{
+	font-size: 24px;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: 300;
+}
+#home h1{
 	font-size: 60px;
 }
 fieldset{
 	border: 0;
+	padding: 0;
+	margin: 0;
 }
 input, button{
 	color: #333;
@@ -38,8 +51,8 @@ input{
 #api{
 	display: none;
 }
-#api label{
-	display: block;
+#api .api_desc{
+	font-size: 13px;
 }
 label.error{
 	display: none;
