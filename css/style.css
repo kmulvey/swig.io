@@ -1,0 +1,30 @@
+body{
+	background: #000;
+	font-family: 'Open Sans', sans-serif;
+	color: #eee;
+}
+section{
+	height: 1000px;
+	width: 100%;
+	background-size: cover!important;
+	position: relative;
+}
+#home { 
+	font-size: 120px;
+	background: url(http://www.offset.com/images/parallax_images/33583.jpg) 50% 0 no-repeat fixed; 
+}
+#about { 
+	background: url(http://www.offset.com/images/parallax_images/21011.jpg) 50% 0 no-repeat fixed; 
+}
+#code { 
+	background: url(http://www.offset.com/images/parallax_images/28931.jpg) 50% 0 no-repeat fixed; 
+}
+article { 
+	height: 458px; 
+	position: absolute; 
+	top: 291px; 
+	font-size: 60px;
+	width: 955px;
+	left: 50%;
+	margin-left: -477px;
+}
