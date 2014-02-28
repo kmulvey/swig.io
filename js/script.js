@@ -1,24 +1,14 @@
 $(document).ready(function(){
-	// Cache the Window object
-	$window = $(window);
-	                
-	$('section[data-type="background"]').each(function(){
-		var $bgobj = $(this); // assigning the object
-		               
-		$(window).scroll(function() {
-			// Scroll the background at var speed
-			// the yPos is a negative value because we're scrolling it UP!								
-			var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-			
-			// Put together our final background position
-			var coords = '50% '+ yPos + 'px';
-			
-			// Move the background
-			$bgobj.css({ backgroundPosition: coords });
-		}); // window scroll Ends
-	});	
+	$('form').on('submit', function(e){
+		e.preventDefault();
+		$(this).find('input[name=email], button').hide();
+		$('#api_key').val('api key val');
+		$('#api').show();
+		$.post('http://swig.io/new', $(this).serialize(), function(d,t,x){
+			console.log(d);
+			console.log(t);
+		}).fail(function() {
+			$(this).find('label.error').show();
+		});
+	});
 }); 
-
-// Create HTML5 elements for IE's sake
-document.createElement("article");
-document.createElement("section");
