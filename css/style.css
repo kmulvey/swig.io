@@ -1,30 +1,47 @@
+html, body{
+	height: 100%;
+}
 body{
-	background: #000;
 	font-family: 'Open Sans', sans-serif;
-	color: #eee;
+	color: #333;
 }
-section{
-	height: 1000px;
-	width: 100%;
-	background-size: cover!important;
-	position: relative;
+#home{
+	background: #EEE;
+	height: 75%;
 }
-#home { 
-	font-size: 120px;
-	background: url(http://www.offset.com/images/parallax_images/33583.jpg) 50% 0 no-repeat fixed; 
-}
-#about { 
-	background: url(http://www.offset.com/images/parallax_images/21011.jpg) 50% 0 no-repeat fixed; 
-}
-#code { 
-	background: url(http://www.offset.com/images/parallax_images/28931.jpg) 50% 0 no-repeat fixed; 
-}
-article { 
-	height: 458px; 
-	position: absolute; 
-	top: 291px; 
+h1{
 	font-size: 60px;
-	width: 955px;
-	left: 50%;
-	margin-left: -477px;
+}
+fieldset{
+	border: 0;
+}
+input, button{
+	color: #333;
+	border: 1px solid #CCC;
+	white-space: nowrap;
+	padding: 6px 12px;
+	font-size: 20px;
+	line-height: 1.42857143;
+	border-radius: 4px;
+}
+button{
+	background-color: rgba(0, 0, 0, 0);
+}
+input{
+	background-color: #FFF;
+	background-image: none;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+#api{
+	display: none;
+}
+#api label{
+	display: block;
+}
+label.error{
+	display: none;
+	color: #A94442;
 }
