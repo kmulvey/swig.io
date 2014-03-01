@@ -10,6 +10,7 @@
 		<title>Swig.io</title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:800italic,400,600,300italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/html5bp.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -17,8 +18,8 @@
 			<div class="center">
 				<div id="logo">SWIG<span>.IO</span></div>
 				<h1>Swig as a Service</h1>
-				<p>Hosted swig template rendering to keep your pages light</p>
-				<form id="signup" action="http://swig.io/new">
+				<p class="tagline">Hosted swig template rendering to keep your pages light</p>
+				<form id="signup" action="/new">
 					<fieldset>
 						<input type="email" name="name" placeholder="Your email address" autofocus>
 						<button type="submit">Get API Key</button>
@@ -26,21 +27,24 @@
 					</fieldset>
 				</form>
 				<div id="api">
-					<p><strong>Your api key: </strong><span id="api_key">sdjkhfksjdhfoiwhuefw</span></p>
-					<p class="api_desc">Use this to read data from the service.</p>
-					<p><strong>Your client key: </strong><span id="client_key">skdjfhksdjhfks</span></p>
-					<p class="api_desc">Use this to send data to the service.</p>
+					<p><strong>Your api key: </strong><span id="api_key"></span></p>
+					<p class="tiny">Use this to read data from the service.</p>
+					<p><strong>Your client key: </strong><span id="user_key"></span></p>
+					<p class="tiny">Use this to send data to the service.</p>
 				</div>
 			</div>
 		</section>
-		<section id="about">
+		<section id="about" class="clearfix">
 			<div class="center">
-		  	<h2>About</h2>
+				<div class="left">Lighten your<br>front page</div>
+				<div class="middle">Render only<br>what you need</div>
+				<div class="right">No translations<br>in memory<br><span class="tiny">i18n Support<span></div>
 			</div>
 		</section>
 		<section id="code">
 			<div class="center">
 		  	<h2>Sample Code</h2>
+			<script src="https://github.shuttercorp.net/gist/lbell/912.js"></script>
 			</div>
 		</section>
 		<footer>
