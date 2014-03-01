@@ -8,21 +8,50 @@
 		<meta name="keywords" content="swig, templaes">
 		<meta name="author" content="Shutterstock">
 		<title>Swig.io</title>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:800italic,400,600,300italic' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/html5bp.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<section id="home" data-speed="10" data-type="background">
-		  <article><h1>Swig as a Service</h1></article>
+		<section id="home">
+			<div class="center">
+				<div id="logo">SWIG<span>.IO</span></div>
+				<h1>Swig as a Service</h1>
+				<p class="tagline">Hosted swig template rendering to keep your pages light</p>
+				<form id="signup" action="/new">
+					<fieldset>
+						<input type="email" name="name" placeholder="Your email address" autofocus>
+						<button type="submit">Get API Key</button>
+						<label class="error">There was an error generating your API key.</label>
+					</fieldset>
+				</form>
+				<div id="api">
+					<p><strong>Your api key: </strong><span id="api_key"></span></p>
+					<p class="tiny">Use this to read data from the service.</p>
+					<p><strong>Your client key: </strong><span id="user_key"></span></p>
+					<p class="tiny">Use this to send data to the service.</p>
+				</div>
+			</div>
 		</section>
-		<section id="about" data-speed="4" data-type="background">
-		  <article><h1>About</h1></article>
+		<section id="about" class="clearfix">
+			<div class="center">
+				<div class="left">Lighten your<br>front page</div>
+				<div class="middle">Render only<br>what you need</div>
+				<div class="right">No translations<br>in memory<br><span class="tiny">i18n Support<span></div>
+			</div>
 		</section>
-		<section id="code" data-speed="4" data-type="background">
-		  <article><h1>Sample Code</h1></article>
+		<section id="code">
+			<div class="center">
+		  	<h2>Sample Code</h2>
+			<script src="https://github.shuttercorp.net/gist/lbell/912.js"></script>
+			</div>
 		</section>
-		<footer><h3>Footer</h3></footer>
+		<footer>
+			<div class="center">
+				&copy; 2014 Swig.io
+			</div>
+		</footer>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
